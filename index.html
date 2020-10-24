@@ -1,11 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Barbershop</h1>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <title>Barbershop</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row fullportrait">
+        <div class="embed-responsive embed-responsive-16by9">
+          <video loop autoplay muted>
+            <source src="public/video/videoplayback.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-overlay">
+          <img
+            src="public/items/logo.png"
+            class="img-fluid"
+            alt="David's barbershop"
+          />
+          <a class="btn btn-info" href="#" role="button">Rezervovať termín</a>
+        </div>
+      </div>
+      <div class="row mt-4 mb-4 ml-2 mr-2">
+        <div class="col-md text-center">
+          <img
+            src="public/items/barber.svg"
+            alt="..."
+            class="img-fluid img-small"
+          />
+          <p class="h4 text-light mt-4 dosis">Nový barbershop v Turzovke</p>
+          <p class="text-light raleway">
+            Navštív novo otvorený barbershop v Turzovke a nechaj to na
+            odborníka. Zabudni na ďalší neželaný účes. Braber Dávid má dlhoroćné
+            skúsenosti a ostrihá ťa presne, ako chceš ty!
+          </p>
+        </div>
+        <div class="col-md text-center">
+          <img
+            src="public/items/clipper.svg"
+            alt="..."
+            class="img-fluid img-small"
+          />
+          <p class="h4 text-light mt-4 dosis">Pánsky účes s FADEom</p>
+          <p class="text-light raleway">
+            Okrem bežného strihania si môžeš nechať spraviť aj takzvaný fade. Už
+            žiadne schody, iba skvelý účes.
+          </p>
+        </div>
+        <div class="col-md text-center">
+          <img
+            src="public/items/razor.svg"
+            alt="..."
+            class="img-fluid img-small"
+          />
+          <p class="h4 text-light mt-4 dosis">
+            Úprava brady a zarovnanie kontúr.
+          </p>
+          <p class="text-light raleway">
+            Každý chlap vie, že o svoju bradu sa treba starať. My sa o tú tvoju
+            postaráme tiež. Zastrihnutie, preriedenie nie je problém.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-4 mb-4 row-desktop">
+        <div class="col-md text-center description-desktop">
+          <img
+            src="public/items/david.jpg"
+            class="img-fluid pictures-desktop"
+            alt="David Malik"
+          />
+        </div>
+        <div class="col-md text-center description-desktop">
+          <blockquote class="blockquote">
+            <p class="h4 raleway bolder mt-4 text-light ml-auto mr-auto description-text-desktop">
+              Ahoj, ja som Dávid a tomuto remeslu sa venujem už niekoľko rokov.
+              Pokial si z okolia Turzovky, alebo aj nie, zastav sa v mojom
+              barbershope a príď sa zrelaxovať.
+            </p>
+            <footer class="blockquote-footer"><span class="text-warning">Dávid Malík</span></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row row-desktop">
+        <div class="col-md text-center description-desktop">
+          <p class="text-light dosis h4 desktop-right">Kde nás nájdete</p>
+          <p
+            class="h6 raleway mt-4 text-light mr-auto ml-auto description-text-desktop"
+          >
+            Nachádzame sa vľavo na prvom poschodí nad drogériou Teta.
+          </p>
+        </div>
+        <div class="col-md text-center description-desktop">
+          <img
+          src="public/items/mapa.png"
+          class="img-fluid"
+          alt="Mapa"
+        />
+        </div>
+      </div>
+
+      <div class="row mb-4 mt-4">
+        <div class="col text-center">
+          <a
+            href="https://www.facebook.com/Barbeshop-Davids-115390603351825"
+            target="blank"
+            ><img
+              src="public/items/facebookwhite.svg"
+              class="img-fluid img-social"
+              alt="facebook link"
+          /></a>
+          <a href="https://www.instagram.com/_barbershop_davids/" target="blank"
+            ><img
+              src="public/items/instagramwhite.svg"
+              class="img-fluid img-social ml-2 mr-2"
+              alt="instagram link"
+          /></a>
+          <a href="#">
+            <img
+              src="public/items/messengerwhite.svg"
+              class="img-fluid img-social"
+              alt="messenger link"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
